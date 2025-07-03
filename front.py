@@ -33,7 +33,7 @@ if prompt := st.chat_input("Type your message..."):
 
     # Call FastAPI endpoint
     response = requests.post(
-        "ai-team-chatpot-production.up.railway.app/chat",
+        "https://ai-team-chatpot-production.up.railway.app/chat",
         json={"message": prompt, "session_id": st.session_state.session_id}
     )
 
